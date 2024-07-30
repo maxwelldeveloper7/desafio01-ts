@@ -1,6 +1,6 @@
 import { DioAccount } from "./DioAccount";
 
-export class VipeAccount extends DioAccount {
+export class VipAccount extends DioAccount {
 
     constructor(name: string, accountNumber: number){
         super(name, accountNumber)
@@ -13,7 +13,7 @@ export class VipeAccount extends DioAccount {
 
         if(this.validateStatus() && value > 0){
             this.setBalance(totalValue)
-            console.log('Voce depositou!')
+            console.log('Você depositou!')
         }else{
             console.log('Depósito cancelado - Valor inválido!')
             return

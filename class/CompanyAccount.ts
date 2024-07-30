@@ -9,7 +9,7 @@ export class CompanyAccount extends DioAccount {
   getLoan = (value: number): void => {
     if (this.validateStatus() && value > 0) {
       this.deposit(value)
-      console.log('Voce pegou um empréstimo')
+      console.log('Você pegou um empréstimo')
     } else {
       console.log('Operação cancelada - valor inválido!')
       return

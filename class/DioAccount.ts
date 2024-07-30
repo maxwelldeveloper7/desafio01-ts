@@ -22,7 +22,7 @@ export abstract class DioAccount {
     if(this.validateStatus()){
       if(value > 0){
         this.balance += value;
-        console.log('Voce depositou!')
+        console.log('Você depositou!')
       } else {
         console.log('Depósito cancelado - Valor inválido!')
         return
@@ -34,7 +34,7 @@ export abstract class DioAccount {
     if(value > 0){
       if((this.validateStatus()) && (value < this.balance)){
         this.balance -= value
-        console.log('Voce sacou!')
+        console.log('Você sacou!')
       } else {
         console.log('Saque cancelado - Saldo insuficiente!')
         return
